@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: fantasy;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #303958;
+    background-blend-mode: multiply,multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imgbox{
+    width: 100px;
+    height: 500px;
+    margin: 1rem;
+    background: url('images/luffy.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    transition: all 0.5s;
+    position: relative;
+    
+}
+
+.imgbox:nth-child(2){
+    background: url(images/zoro.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.imgbox:nth-child(3){
+    background: url(images/shanks.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.imgbox:nth-child(4){
+    background: url(images/garp.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgbox:hover{
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 20px 5px 5px #000;
+    transform: translateY(-15%);
+}
+
+.imgbox h3{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+
+.imgbox:hover h3{
+    opacity: 1;
+    bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
